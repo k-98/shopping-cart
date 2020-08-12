@@ -52,7 +52,7 @@ pipeline {
       steps{
         echo "Deploying to dev environment"
         sh 'docker rm -f chairshoppingcart || true'
-        sh 'docker run -d --name=chairshoppingcart -p 5000:80 kt98/shoppingcart'
+        sh 'docker run -d --name=chairshoppingcart -p 8081:80 kt98/shoppingcart'
         //sh 'npm start'
       }
     }
