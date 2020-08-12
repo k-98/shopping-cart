@@ -28,7 +28,7 @@ Resources:
           yum install docker
           service docker start
           usermod -a -G docker ec2-user
-          docker run -d --name=chairshoppingcart -p 5000:8080 8081:80 kt98/shoppingcart
+          docker run -d --name=chairshoppingcart -p 8081:80 kt98/shoppingcart
 
   MyInstance2:
     Type: AWS::EC2::Instance
